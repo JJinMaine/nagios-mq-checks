@@ -22,4 +22,9 @@ Here's how you use the mq-utils.jar file:
   
 `check_command check_mq!QMGR!PORT#!CHANNEL!QUEUENAME!WARNING#!CRITICAL#`
   
-More to come ...
+As with most things on the internet, "it works on my computer" but YMMV. I'm not planning on making any future releases, this was more of a one-time thing. However, feel free to add / cleanup / make a PR if you want - I'm not opposed to putting out new releases.  
+
+Thanks for reading and hope it works for you!
+
+
+
