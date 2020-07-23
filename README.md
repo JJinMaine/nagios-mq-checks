@@ -13,12 +13,13 @@ Here's how you use the mq-utils.jar file:
 1) copy the mq-utils.jar file to your nagios libexec directory.  
 2) define a command at checkcommands.cfg:  
 
-`define command{`    
-  `command_name check_mq`  
-  `command_line java -jar $USER1$/mq-utils.jar $ARG1$ $ARG2$ $HOSTADDRESS$ $ARG3$ $ARG4$ -w $ARG5$ -c $ARG6$ -debug`  
+`define command{`  
+`command_name check_mq`  
+`command_line java -jar $USER1$/mq-utils.jar $ARG1$ $ARG2$ $HOSTADDRESS$ $ARG3$ $ARG4$ -w $ARG5$ -c $ARG6$ -debug`  
 `}`  
 
-3) the service check command should be:
-  `check_command check_mq!QMGR!PORT#!CHANNEL!QUEUENAME!WARNING#!CRITICAL#`
+3) the service check command should be:  
+  
+`check_command check_mq!QMGR!PORT#!CHANNEL!QUEUENAME!WARNING#!CRITICAL#`
   
 More to come ...
